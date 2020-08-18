@@ -1,0 +1,16 @@
+name: Shell Commands
+
+on: [push, pull_request]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: echo a string
+        run: echo "hello world"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
+      - name: echo computer version
+        run: cat /etc/os-release
