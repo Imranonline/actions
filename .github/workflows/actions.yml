@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          Default: ${{ github.repository }}
+          repository: "actions/checkout"
       - name: List Files Checkout
         run: |
           pwd
